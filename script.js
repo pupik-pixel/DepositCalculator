@@ -217,11 +217,11 @@ $(document).ready(function() {
                 termValue = term.value;
             }
             let sendData = {
-                startDate: date.value,
-                sum: sumDeposit.value,
-                term: termValue,
-                percent: percent.value,
-                sumAdd: sumAddValue
+                'startDate': date.value,
+                'sum': sumDeposit.value,
+                'term': termValue,
+                'percent': percent.value,
+                'sumAdd': sumAddValue
             }
           $.ajax({
               datatype: "json",
@@ -230,11 +230,11 @@ $(document).ready(function() {
               data: sendData,
               success: function ( data ) {
                   resultJSON = {
-                      sum: data
+                      'sum': data
                   }
                   $('#inputContainer').css('border-bottom', 'medium solid gray');
                   $('#bottomText').text('Сумма к выплате');
-                  $('#resultText').text(String(data))
+                  $('#resultText').text(String(resultJSON['sum']))
               }
           });
           return false;
