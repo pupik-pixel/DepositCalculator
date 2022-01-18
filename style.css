@@ -1,0 +1,175 @@
+#header {
+    width:100%;
+    background-color: #1F2229;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0%;
+}
+#headerImage {
+    vertical-align: middle;
+    padding-right: 1%;
+}
+#headerText {
+    color: white;
+    font-size: 20pt;
+    padding-left: 10%;
+}
+
+#bodyForCalc {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: beige; 
+    display: grid;
+    grid-template-rows: 20% 20% 60%;
+}
+
+#headerInBody {
+    font-size: 350%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#description {
+    font-size: 125%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#inputContainer {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 20%;
+    grid-row-gap: 10%;
+    grid-template-rows: 15% 15% 15% 15%;
+    align-items: center;
+}
+
+#resultContainer {
+    background-color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#bottomText {
+    padding-left: 15%;
+    color: gray;
+}
+
+#resultText {
+    padding-left: 20%;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+#termContainer
+{
+    display: flex;
+    height: 65%;
+}
+
+#term
+{
+    flex-grow: 2; 
+    border-top: medium solid black;
+    border-left: medium solid black;
+    border-right: thin solid black;
+    border-bottom: medium solid black;
+}
+
+#monthOrYear
+{
+    flex-grow: 1; 
+    border-top: medium solid black;
+    border-left: thin solid black;
+    border-right: medium solid black;
+    border-bottom: medium solid black;
+}
+
+#monthlyDepositReplenishment {
+    display: none;
+}
+#textForCheckbox {
+    color: #000;
+    cursor: default;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+#textForCheckbox:before  {
+    content: " ";
+    color: #000;
+    display: inline-block;
+    font: 20px/30px Arial;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    border: medium solid black;
+    border-image: initial;
+    vertical-align: middle;
+}
+
+#monthlyDepositReplenishment:checked + #textForCheckbox:before {
+    content: "✔";
+}
+
+#submit {
+    background:#33C4A0;
+    border: none;
+    width: 60%;
+    height: 90%;
+    color: white;
+}
+
+.inputWithErrorLabel {
+    display: flex;
+    flex-direction: column;
+    height: 140%;
+}
+
+.inputWithErrorLabel > input {
+    flex-grow: 2;
+    margin-bottom: 2%;
+}
+
+.inputWithErrorLabel > label {
+    flex-grow: 1;
+}
+
+#monthlyDepositReplenishment {
+    margin-left: 20%;
+}
+
+#date, #sumDeposit, #percent, #monthlyDepositReplenishment, #sumDepositReplenishment
+{
+    height: 70%;
+    border: medium solid black;
+}
+
+#dateError, #sumDepositError, #percentError, #termError, #sumDepositReplenishmentError {
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    visibility: hidden;
+}
+
+#headerText, #headerInBody, #description, #textForCheckbox, #resultText, #bottomText, option {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0%;  
+    display: grid; 
+    height: 99vh;
+    grid-template-rows:  10% 73% 18%;
+}
+
+
