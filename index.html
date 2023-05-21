@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Калькулятор прибыли по вкладам</title>
     <meta charset="utf-8">
@@ -10,46 +11,51 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-<div id="header">
-    <div id="headerText">
-        <img id="headerImage" src="../images/iq-dev.png">
-        Deposit Calculator</div>
-</div>
-<div id="bodyForCalc">
-    <p id="headerInBody">Депозитный калькулятор</p>
-    <p id="description">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке по опредленному тарифу.</p>
-    <form id="inputContainer">
-        <div class="inputWithErrorLabel">
-            <input id="date" name="date" type="text" placeholder="Дата открытия" ><label for="date" id="dateError">Ошибка</label>
-        </div>
-        <div class="inputWithErrorLabel">
-            <div id="termContainer">
-                <input id="term" name="term" type="text" placeholder="Срок вклада">
-                <select id="monthOrYear">
-                    <option value="Месяц" selected>Месяц</option>
-                    <option value="Год">Год</option>
-                </select>
-            </div><label for="term" id="termError">Не менее 1 года</label>
-        </div>
-        <div class="inputWithErrorLabel">
-            <input id="sumDeposit" name="sumDeposit" type="text" placeholder="Сумма вклада"><label for="sumDeposit" id="sumDepositError">Ошибка</label>
-        </div>
-        <div class="inputWithErrorLabel">
-            <input id="percent" name="percent" type="text" placeholder="процентная ставка, % годовых"><label for="percent" id="percentError">Ошибка</label>
-        </div>
-        <input id="monthlyDepositReplenishment" name="monthlyDepositReplenishment" type="checkbox" checked onclick="sumAddVisibility()">
-        <label id="textForCheckbox" for="monthlyDepositReplenishment">Ежемесячное пополнение вклада </label>
-        <div class="inputWithErrorLabel">
-            <input id="sumDepositReplenishment" name="sumDepositReplenishment" type="text" placeholder="Сумма пополнения вклада">
-            <label for="sumDepositReplenishment" id="sumDepositReplenishmentError">Ошибка</label>
-        </div>
-        <input id="submit" type = 'submit' value = "Рассчитать"></input>
-    </form>
-</div>
-<div id="resultContainer">
-    <p id="bottomText"></p>
-    <p id="resultText"></p>
-</div>
+    <div id="header">        
+    </div>
+    <div id="bodyForCalc">
+        <p id="headerInBody">Депозитный калькулятор</p>
+        <p id="description">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке
+            по опредленному тарифу.</p>
+        <form id="inputContainer">
+            <div class="inputWithErrorLabel">
+                <input id="date" name="date" type="text" placeholder="Дата открытия"><label for="date"
+                    id="dateError">Ошибка</label>
+            </div>
+            <div class="inputWithErrorLabel">
+                <div id="termContainer">
+                    <input id="term" name="term" type="text" placeholder="Срок вклада">
+                    <select id="monthOrYear">
+                        <option value="Месяц" selected>Месяц</option>
+                        <option value="Год">Год</option>
+                    </select>
+                </div><label for="term" id="termError">Не менее 1 года</label>
+            </div>
+            <div class="inputWithErrorLabel">
+                <input id="sumDeposit" name="sumDeposit" type="text" placeholder="Сумма вклада"><label for="sumDeposit"
+                    id="sumDepositError">Ошибка</label>
+            </div>
+            <div class="inputWithErrorLabel">
+                <input id="percent" name="percent" type="text" placeholder="процентная ставка, % годовых"><label
+                    for="percent" id="percentError">Ошибка</label>
+            </div>
+            <input id="monthlyDepositReplenishment" name="monthlyDepositReplenishment" type="checkbox" checked
+                onclick="sumAddVisibility()">
+            <label id="textForCheckbox" for="monthlyDepositReplenishment">Ежемесячное пополнение вклада </label>
+            <div class="inputWithErrorLabel">
+                <input id="sumDepositReplenishment" name="sumDepositReplenishment" type="text"
+                    placeholder="Сумма пополнения вклада">
+                <label for="sumDepositReplenishment" id="sumDepositReplenishmentError">Ошибка</label>
+            </div>
+            <input id="submit" type='submit' value="Рассчитать"></input>
+        </form>
+    </div>
+    <div id="resultContainer">
+        <p id="bottomText"></p>
+        <p id="resultText"></p>
+    </div>
 </body>
+
 </html>
